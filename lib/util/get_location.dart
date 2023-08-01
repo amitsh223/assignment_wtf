@@ -26,5 +26,9 @@ class Util{
   return await Geolocator.getCurrentPosition();
 }
 
+double? catculateDistance(double lat1,double long1,double lat2,double long2){
+  double distanceInMeters = Geolocator.distanceBetween(lat1, long1, lat2, long2);
+}
+
 
 }
